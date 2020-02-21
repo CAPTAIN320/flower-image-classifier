@@ -27,7 +27,7 @@ def train(model, train_loader, valid_loader, criterion, optimizer, epochs, print
     steps = 0
     for e in range(epochs):
         running_loss = 0
-        print(f"Epoch {e + 1} -------------------------------------------")
+        print(f"Epoch {e + 1} --------------------------------------------")
         for images, labels in train_loader:
             steps += 1
             if use_gpu and torch.cuda.is_available():
